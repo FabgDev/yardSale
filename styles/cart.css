@@ -1,0 +1,111 @@
+:root {
+  --white: #ffffff;
+  --black: #000000;
+  --very-light-pink: #c7c7c7;
+  --text-input-field: #f7f7f7;
+  --hospital-green: #acd9b2;
+  --sm: 1.4rem;
+  --md: 1.6rem;
+  --lg: 1.8rem;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  font-family: "Quicksand", sans-serif;
+}
+
+.my-order{
+  width: 100%;
+  height: 100vh;
+  padding: 1rem;
+}
+
+.order-container{
+  width: 30rem;
+  position: absolute;
+  right: 0;
+  margin: 1rem;
+}
+
+.back-img{
+  transform: rotate(180deg);
+  position: absolute;
+  top: 1.8rem;
+  width: 0.7rem;
+  height: 1.2rem;
+}
+
+.back-img:hover{
+  cursor: pointer;
+}
+
+.title{
+  font-size: var(--lg);
+  margin-left: 2rem;
+  font-weight: bold;
+}
+
+.order{
+  display: grid;
+  grid-template-columns: auto 1fr auto auto;
+  gap: 1.6rem;
+  margin-bottom: 2.4rem;
+  align-items: center;
+}
+
+.order .product-img{
+  width: 7rem;
+  height: 7rem;
+  border-radius: 2rem;
+  object-fit: cover;
+}
+
+.order .product-name{
+  color: var(--very-light-pink);
+  font-size: var(--md);
+}
+
+.order .product-price{
+  font-size: var(--md);
+  font-weight: bold;
+}
+
+.order .close-img{
+  width: 1rem;
+  height: 1rem;
+}
+
+.order .close-img:hover{
+  cursor: pointer;
+}
+
+.total{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--text-input-field);
+  margin-bottom: 2.4rem;
+  border-radius: 2rem;
+  padding: 0 2.4rem;
+}
+
+.total-text, .total-price{
+  font-size: var(--md);
+  font-weight: bold;
+}
+
+.primary-button{
+  background-color: var(--hospital-green);
+  border-radius: 0.8rem;
+  border: none;
+  color: var(--white);
+  width: 100%;
+  cursor: pointer;
+  font-size: var(--md);
+  font-weight: bold;
+  height: 5rem;
+}
